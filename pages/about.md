@@ -6,13 +6,28 @@ permalink: /about/
 instagram_username: crep_8
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Thiago Rossener" width="200">
+<img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Martin Črepinšek" width="200">
 
 # About
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+My clubs
+<table>
+  <thead>
+    <tr>
+      <th>Club</th>
+      <th>Year</th>
+      <th>Note</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in site.data.myclubs %}
+    <tr>
+      <td>{{item.Club}}</td>
+      <td>{{item.Year}}</td>
+      <td>{{item.Note}}</td>
+      <td><a href="{{item.Link}}">WWW</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
