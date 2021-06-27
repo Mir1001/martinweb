@@ -2,7 +2,7 @@
 layout: author
 photo: /assets/img/uploads/profile.png
 name: martincrepinsek
-display_name: Martin Črepinšek
+display_name: Martin Črepinšek (2005)
 position: Player
 bio: Hockey Player, ... , Scount, Computer science ...
 
